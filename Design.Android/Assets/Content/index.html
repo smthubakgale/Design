@@ -1,0 +1,27 @@
+﻿<!--
+    Thubakgale MS - 201701870
+    27-10-2021
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery.min.js"></script>
+    <script src="bridge.js"></script>
+</head>
+<body>
+
+    Home
+    <button onclick="call()"> Bridge </button>
+    <script> 
+        function call()
+        {
+            layout("l_bridge", JSON.stringify({"Name":"Mabalane"}));
+        }
+        function p_bridge(param)
+        {
+           alert("index :: " + param)
+        }
+    </script>
+</body>
+</html>
+

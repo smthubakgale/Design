@@ -1,0 +1,28 @@
+﻿<!--
+    Thubakgale MS - 201701870
+    27-10-2021
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery.min.js"></script>
+    <script src="bridge.js"></script>
+</head>
+<body>
+
+    Register
+    <button onclick="call()"> Csharp Bridge </button>
+    <script> 
+        function call()
+        { 
+            var b = hPost("Test", "post1", JSON.stringify({ "Name": "Mabalane" }));
+            alert(b);
+
+            var a = hGet("Test", "get1", JSON.stringify({ "Name": "Mabalane" }));
+            hAlert("GET : " , a);
+        } 
+    </script>
+
+</body>
+</html>
+

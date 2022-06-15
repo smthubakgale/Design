@@ -1,0 +1,34 @@
+<!--
+    Thubakgale MS - 201701870
+    27-10-2021
+ --> 
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery.min.js"></script>
+    <script src="bridge.js"></script>
+</head>
+<body>
+
+    Layout
+    <button name="index.html" onclick="redirect(this)"> Home </button>
+    <button name="register.html" onclick="redirect(this)"> Register </button><br /><br/>
+    <button onclick="call()"> Bridge </button>
+    <script> 
+        function redirect(tag)
+        {
+            $("#frm").attr("src" , $(tag).attr("name"))
+        }
+        function call()
+        {
+            page("p_bridge", "Samuel");
+        }
+        function l_bridge(param)
+        {
+            alert("layout :: " + param)
+        }
+    </script>
+
+    <iframe id="frm" src="index.html"></iframe>
+</body>
+</html>
