@@ -1,5 +1,6 @@
 ﻿   
 using Android.Content;
+using Android.Views;
 using Design;
 using Hybrid.Droid;
 using Hybrid.Views.Layout;
@@ -69,6 +70,11 @@ namespace Hybrid.Droid
                 ((HybridWebView)Element).Cleanup();
             }
             base.Dispose(disposing);
+        }
+        public override bool DispatchTouchEvent(MotionEvent e)
+        {
+            Parent.RequestDisallowInterceptTouchEvent(true);
+            return base.DispatchTouchEvent(e);
         }
         //
     }
