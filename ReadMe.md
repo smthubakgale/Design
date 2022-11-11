@@ -15,6 +15,16 @@ constraints . As such the **template in this repository** basically
 shows how you can develop an application with Xamarin C\# but use web
 design for the Interface .
 
+> Requirements :
+  - Visual Studio Code : 
+  - Nox Player         : 
+  - Android SDK PLatform Tools : https://developer.android.com/studio/releases/platform-tools
+  
+> Installations 
+  - Install Nox Player
+  - Copy "adb.exe , AdbWinApi.dll , AdbWinUsbApi.dll" from the platform tools 
+  - Paste in 
+
 It also shows how to navigate between pages .
 
 NB: Note that the project is under MIT license , thus it can be used for
